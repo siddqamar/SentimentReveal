@@ -4,7 +4,6 @@ from transformers import pipeline
 # Loading model from hugging face
 sentiment_model = pipeline("sentiment-analysis", model="nlptown/bert-base-multilingual-uncased-sentiment")
 
-
 def analyze_sentiment(text):
     
     result = sentiment_model(text)
